@@ -11,7 +11,7 @@ import Contato from "./componentes/paginas/contato/contato.js";
 
 function App() {
   return (
-    <BrowserRouter>
+    <BrowserRouter  basename={process.env.PUBLIC_URL}>
       <Routes>
         <Route path="/" element={<Pagina1/>} />
         <Route path="sobreMim" element={<Eu/>} />
