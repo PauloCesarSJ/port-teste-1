@@ -1,0 +1,48 @@
+//variaveis
+$cor-1-texto: gainsboro;
+
+$cor-2-texto: #d8d8d69c;
+
+$cor-fundo-sobremim: rgb(16, 14, 41);
+
+@keyframes surgir {
+    from {
+        transform: translateY(115px); 
+        opacity: 0;
+    }
+
+    to {
+        transform: translateY(0);
+        opacity:1 ;
+    }
+}
+@keyframes girar{
+    from {
+        transform: rotateX(-20deg) rotateY(-10deg);
+      }
+    
+      50% {
+        transform: rotateX(20deg) rotateY(320deg);
+      }
+    
+      to {
+        transform: rotateX(-20deg) rotateY(-20deg);
+      }
+}
+
+
+
+.esconder{
+    visibility: hidden;
+   
+    
+}
+.aparecer{
+    animation-name: surgir;
+    animation-duration: 2s;
+}
+
+
+body{
+    background-color: #383838;
+}

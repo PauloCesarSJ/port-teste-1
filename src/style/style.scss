@@ -1,0 +1,15 @@
+@import "./global";
+
+
+@import "../componentes/menu/menu";
+@import "../componentes/rodape/rodape";
+
+
+
+
+@import "../componentes/paginas/pagina1/corpo/corpo1";
+@import "../componentes/paginas/sobreMim/corpo2/sobremim";
+@import "../componentes/paginas/sobreMim/fundoSobremim/fundoSobremim";
+@import "../componentes/paginas/projetos/corpo3/corpo3";
+@import "../componentes/paginas/contato/corpo4/corpo4";
+@import "../componentes/paginas/contato/corpo4/enviarGmail/enviarGmail"

@@ -1,0 +1,32 @@
+@import "../../../../style/global";
+
+
+
+.quadroSobreMIm{
+    display: flex;
+    margin-top: -40%;
+    position: absolute;
+    div{
+        flex: 2;
+        img{
+            width: 80%;
+        }
+        div {
+            margin-right: 5%;
+            margin-left: 8%;
+            flex-wrap: wrap;
+            color: $cor-1-texto;
+            p{
+                font-size: 150%;
+                a{
+                    color: $cor-1-texto;
+                    text-decoration: none;
+                }
+            }
+        }
+    }    
+}
+.rodapeEU{
+    margin-top: 48%;
+    margin-left: 4%;
+}

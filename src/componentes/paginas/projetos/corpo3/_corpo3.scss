@@ -1,0 +1,28 @@
+@import "../../../../style/global";
+
+.corpo3{
+    div{
+        display: flex;
+        margin-left: 4%;
+        flex-direction: column;
+        
+        h1{
+            color: $cor-1-texto;
+        }
+        p{
+            width: 90%;
+            color: $cor-1-texto;
+            font-size: 30px;
+        }
+        a{
+            img{
+                width: 70%;
+            }
+        }
+    }
+   
+}
+.RodapeProjetos{
+    margin-left: 4%;
+    width: 15%;
+}

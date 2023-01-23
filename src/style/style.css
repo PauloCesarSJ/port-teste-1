@@ -1,0 +1,531 @@
+@-webkit-keyframes surgir {
+  from {
+    transform: translateY(115px);
+    opacity: 0;
+  }
+  to {
+    transform: translateY(0);
+    opacity: 1;
+  }
+}
+@keyframes surgir {
+  from {
+    transform: translateY(115px);
+    opacity: 0;
+  }
+  to {
+    transform: translateY(0);
+    opacity: 1;
+  }
+}
+@-webkit-keyframes girar {
+  from {
+    transform: rotateX(-20deg) rotateY(-10deg);
+  }
+  50% {
+    transform: rotateX(20deg) rotateY(320deg);
+  }
+  to {
+    transform: rotateX(-20deg) rotateY(-20deg);
+  }
+}
+@keyframes girar {
+  from {
+    transform: rotateX(-20deg) rotateY(-10deg);
+  }
+  50% {
+    transform: rotateX(20deg) rotateY(320deg);
+  }
+  to {
+    transform: rotateX(-20deg) rotateY(-20deg);
+  }
+}
+.esconder {
+  visibility: hidden;
+}
+
+.aparecer {
+  -webkit-animation-name: surgir;
+          animation-name: surgir;
+  -webkit-animation-duration: 2s;
+          animation-duration: 2s;
+}
+
+body {
+  background-color: #383838;
+}
+
+@keyframes surgir {
+  from {
+    transform: translateY(115px);
+    opacity: 0;
+  }
+  to {
+    transform: translateY(0);
+    opacity: 1;
+  }
+}
+@keyframes girar {
+  from {
+    transform: rotateX(-20deg) rotateY(-10deg);
+  }
+  50% {
+    transform: rotateX(20deg) rotateY(320deg);
+  }
+  to {
+    transform: rotateX(-20deg) rotateY(-20deg);
+  }
+}
+.esconder {
+  visibility: hidden;
+}
+
+.aparecer {
+  -webkit-animation-name: surgir;
+          animation-name: surgir;
+  -webkit-animation-duration: 2s;
+          animation-duration: 2s;
+}
+
+body {
+  background-color: #383838;
+}
+
+.menu {
+  margin-left: 4%;
+  margin-top: 3%;
+  width: 35%;
+  background-color: transparent;
+}
+.menu nav {
+  display: flex;
+  justify-content: space-between;
+}
+.menu nav :first-child {
+  font-size: 1.5em;
+}
+.menu nav a {
+  font-size: 1.25em;
+  color: rgba(216, 216, 214, 0.6117647059);
+  text-decoration: none;
+}
+.menu nav a:hover {
+  color: gainsboro;
+}
+
+@keyframes surgir {
+  from {
+    transform: translateY(115px);
+    opacity: 0;
+  }
+  to {
+    transform: translateY(0);
+    opacity: 1;
+  }
+}
+@keyframes girar {
+  from {
+    transform: rotateX(-20deg) rotateY(-10deg);
+  }
+  50% {
+    transform: rotateX(20deg) rotateY(320deg);
+  }
+  to {
+    transform: rotateX(-20deg) rotateY(-20deg);
+  }
+}
+.esconder {
+  visibility: hidden;
+}
+
+.aparecer {
+  -webkit-animation-name: surgir;
+          animation-name: surgir;
+  -webkit-animation-duration: 2s;
+          animation-duration: 2s;
+}
+
+body {
+  background-color: #383838;
+}
+
+.rodapePrincipal {
+  position: absolute;
+  display: flex;
+  justify-content: space-between;
+  width: 20%;
+}
+.rodapePrincipal a {
+  color: rgba(216, 216, 214, 0.6117647059);
+}
+
+@keyframes surgir {
+  from {
+    transform: translateY(115px);
+    opacity: 0;
+  }
+  to {
+    transform: translateY(0);
+    opacity: 1;
+  }
+}
+@keyframes girar {
+  from {
+    transform: rotateX(-20deg) rotateY(-10deg);
+  }
+  50% {
+    transform: rotateX(20deg) rotateY(320deg);
+  }
+  to {
+    transform: rotateX(-20deg) rotateY(-20deg);
+  }
+}
+.esconder {
+  visibility: hidden;
+}
+
+.aparecer {
+  -webkit-animation-name: surgir;
+          animation-name: surgir;
+  -webkit-animation-duration: 2s;
+          animation-duration: 2s;
+}
+
+body {
+  background-color: #383838;
+}
+
+.divTextoAreaHome {
+  position: absolute;
+  display: block;
+  margin-top: 7%;
+  margin-left: 14%;
+  width: 70%;
+  line-height: 1em;
+}
+
+.texto {
+  text-align: center;
+  color: gainsboro;
+}
+
+.primeiroTextoHome {
+  font-size: 5.5em;
+  flex-wrap: wrap;
+  line-height: 20px;
+}
+
+.segundoTextoHome {
+  color: rgba(216, 216, 214, 0.6117647059);
+  font-size: 1.7em;
+}
+
+.button {
+  background-color: transparent;
+  padding: 1.5em 2.5em;
+  max-width: 25%;
+  margin-left: 35%;
+  border-color: rgba(216, 216, 214, 0.6117647059);
+}
+.button a {
+  text-decoration: none;
+  color: gainsboro;
+  font-size: 2em;
+}
+.button:hover {
+  transition-duration: 1s;
+  cursor: pointer;
+  background-color: gainsboro;
+}
+.button:hover a {
+  transition-duration: 1s;
+  color: black;
+}
+
+.controleHome {
+  background-color: transparent;
+  color: gainsboro;
+  border: none;
+  cursor: pointer;
+  position: absolute;
+  margin-top: 35%;
+  margin-left: 42%;
+}
+
+.rodapeHome {
+  margin-top: 42.5%;
+  margin-left: 4%;
+}
+
+@keyframes surgir {
+  from {
+    transform: translateY(115px);
+    opacity: 0;
+  }
+  to {
+    transform: translateY(0);
+    opacity: 1;
+  }
+}
+@keyframes girar {
+  from {
+    transform: rotateX(-20deg) rotateY(-10deg);
+  }
+  50% {
+    transform: rotateX(20deg) rotateY(320deg);
+  }
+  to {
+    transform: rotateX(-20deg) rotateY(-20deg);
+  }
+}
+.esconder {
+  visibility: hidden;
+}
+
+.aparecer {
+  -webkit-animation-name: surgir;
+          animation-name: surgir;
+  -webkit-animation-duration: 2s;
+          animation-duration: 2s;
+}
+
+body {
+  background-color: #383838;
+}
+
+.quadroSobreMIm {
+  display: flex;
+  margin-top: -40%;
+  position: absolute;
+}
+.quadroSobreMIm div {
+  flex: 2;
+}
+.quadroSobreMIm div img {
+  width: 80%;
+}
+.quadroSobreMIm div div {
+  margin-right: 5%;
+  margin-left: 8%;
+  flex-wrap: wrap;
+  color: gainsboro;
+}
+.quadroSobreMIm div div p {
+  font-size: 150%;
+}
+.quadroSobreMIm div div p a {
+  color: gainsboro;
+  text-decoration: none;
+}
+
+.rodapeEU {
+  margin-top: 48%;
+  margin-left: 4%;
+}
+
+@keyframes surgir {
+  from {
+    transform: translateY(115px);
+    opacity: 0;
+  }
+  to {
+    transform: translateY(0);
+    opacity: 1;
+  }
+}
+@keyframes girar {
+  from {
+    transform: rotateX(-20deg) rotateY(-10deg);
+  }
+  50% {
+    transform: rotateX(20deg) rotateY(320deg);
+  }
+  to {
+    transform: rotateX(-20deg) rotateY(-20deg);
+  }
+}
+.esconder {
+  visibility: hidden;
+}
+
+.aparecer {
+  -webkit-animation-name: surgir;
+          animation-name: surgir;
+  -webkit-animation-duration: 2s;
+          animation-duration: 2s;
+}
+
+body {
+  background-color: #383838;
+}
+
+.corpo {
+  display: flex;
+  margin-top: 8%;
+  margin-left: 7%;
+}
+.corpo .cubo {
+  width: 500px;
+  height: 500px;
+  transform: rotateX(-20deg) rotateY(-10deg);
+  transform-style: preserve-3d;
+  -webkit-animation: girar 10s infinite alternate;
+          animation: girar 10s infinite alternate;
+}
+.corpo .cubo div {
+  background: linear-gradient(50deg, #3C6255, #285430);
+  border: 2px solid rgb(16, 14, 41);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 500px;
+  height: 500px;
+  position: absolute;
+}
+
+.frente {
+  transform: translateZ(250px);
+}
+
+.direita {
+  transform: rotateY(90deg) translateZ(250px);
+}
+
+.fundo {
+  transform: rotateY(180deg) translateZ(250px);
+}
+
+.esquerda {
+  transform: rotateY(-90deg) translateZ(250px);
+}
+
+.topo {
+  transform: rotateX(90deg) translateZ(250px);
+}
+
+.baixo {
+  transform: rotateX(-90deg) translateZ(250px);
+}
+
+@keyframes surgir {
+  from {
+    transform: translateY(115px);
+    opacity: 0;
+  }
+  to {
+    transform: translateY(0);
+    opacity: 1;
+  }
+}
+@keyframes girar {
+  from {
+    transform: rotateX(-20deg) rotateY(-10deg);
+  }
+  50% {
+    transform: rotateX(20deg) rotateY(320deg);
+  }
+  to {
+    transform: rotateX(-20deg) rotateY(-20deg);
+  }
+}
+.esconder {
+  visibility: hidden;
+}
+
+.aparecer {
+  -webkit-animation-name: surgir;
+          animation-name: surgir;
+  -webkit-animation-duration: 2s;
+          animation-duration: 2s;
+}
+
+body {
+  background-color: #383838;
+}
+
+.corpo3 div {
+  display: flex;
+  margin-left: 4%;
+  flex-direction: column;
+}
+.corpo3 div h1 {
+  color: gainsboro;
+}
+.corpo3 div p {
+  width: 90%;
+  color: gainsboro;
+  font-size: 30px;
+}
+.corpo3 div a img {
+  width: 70%;
+}
+
+.RodapeProjetos {
+  margin-left: 4%;
+  width: 15%;
+}
+
+@keyframes surgir {
+  from {
+    transform: translateY(115px);
+    opacity: 0;
+  }
+  to {
+    transform: translateY(0);
+    opacity: 1;
+  }
+}
+@keyframes girar {
+  from {
+    transform: rotateX(-20deg) rotateY(-10deg);
+  }
+  50% {
+    transform: rotateX(20deg) rotateY(320deg);
+  }
+  to {
+    transform: rotateX(-20deg) rotateY(-20deg);
+  }
+}
+.esconder {
+  visibility: hidden;
+}
+
+.aparecer {
+  -webkit-animation-name: surgir;
+          animation-name: surgir;
+  -webkit-animation-duration: 2s;
+          animation-duration: 2s;
+}
+
+body {
+  background-color: #383838;
+}
+
+.corpo4 {
+  margin-top: 5%;
+  display: flex;
+  flex-direction: column;
+}
+.corpo4 div {
+  font-size: 25px;
+  color: gainsboro;
+}
+.corpo4 div h1 {
+  align-items: center;
+  align-self: center;
+  margin-left: 35%;
+}
+.corpo4 .rodapeContato {
+  margin-top: 37.5%;
+  margin-left: 4%;
+}
+
+.enviarEmail {
+  display: flex;
+  flex-direction: column;
+  width: 30%;
+  margin-left: 30%;
+}
+.enviarEmail input {
+  background-color: whitesmoke;
+}/*# sourceMappingURL=style.css.map */

@@ -1,0 +1,12 @@
+@import "../../style/global";
+
+
+.rodapePrincipal{
+    position: absolute;
+    display: flex;
+    justify-content: space-between;
+    width: 20%;
+    a{
+        color: $cor-2-texto;
+    }
+}

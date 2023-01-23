@@ -1,0 +1,64 @@
+@import "../../../../style/global";
+
+.divTextoAreaHome{
+    position: absolute;
+    display: block;
+    margin-top: 7%;
+    margin-left: 14%;
+    width: 70%;
+    line-height: 1em;
+}
+
+
+.texto{
+    text-align: center;
+    color: $cor-1-texto;
+}
+
+.primeiroTextoHome{
+    font-size: 5.5em;
+    flex-wrap: wrap;
+    line-height: 20px;
+}
+
+.segundoTextoHome{
+    color: $cor-2-texto;
+    font-size: 1.7em;
+}
+
+.button{
+    background-color: transparent;
+    padding: 1.5em 2.5em;
+    max-width: 25%;
+    margin-left: 35%;
+    border-color: $cor-2-texto;
+    a{
+        text-decoration: none;
+        color: $cor-1-texto;
+        font-size: 2em;
+    }
+    &:hover{
+        transition-duration: 1s;
+        cursor: pointer;
+        background-color:$cor-1-texto ;
+        a{
+            transition-duration: 1s;
+            color: black;
+        }
+    }
+}
+
+.controleHome {
+    background-color: transparent;
+    color: $cor-1-texto;
+    border: none;
+    cursor: pointer;
+    position: absolute;
+    margin-top: 35%;
+    margin-left: 42%;
+}
+
+.rodapeHome{
+    margin-top: 42.5%;
+    margin-left: 4%;
+}

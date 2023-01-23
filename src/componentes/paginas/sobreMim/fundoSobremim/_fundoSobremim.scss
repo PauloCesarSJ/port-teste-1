@@ -1,0 +1,44 @@
+@import "../../../../style/global";
+
+
+.corpo{
+    display: flex;
+    margin-top: 8%;
+    margin-left: 7%;
+    .cubo{
+        width: 500px;
+        height: 500px;
+        transform: rotateX(-20deg) rotateY(-10deg);
+        transform-style: preserve-3d;
+        animation: girar 10s infinite alternate;
+        div{
+            background: linear-gradient(50deg, #3C6255, #285430);
+            border: 2px solid $cor-fundo-sobremim;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            width: 500px;
+            height: 500px;
+            position: absolute;
+        }
+    }
+}
+
+.frente{
+    transform: translateZ(250px);
+}
+.direita{
+    transform: rotateY(90deg) translateZ(250px);
+}
+.fundo{
+    transform: rotateY(180deg) translateZ(250px);
+}
+.esquerda{
+    transform: rotateY(-90deg) translateZ(250px);
+}
+.topo{
+    transform: rotateX(90deg) translateZ(250px);
+}
+.baixo{
+    transform: rotateX(-90deg) translateZ(250px);
+}
