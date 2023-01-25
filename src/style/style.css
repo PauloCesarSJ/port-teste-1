@@ -91,26 +91,64 @@ body {
   background-color: #383838;
 }
 
+@-webkit-keyframes XparaMenu {
+  from {
+    transform: rotateX(0px);
+  }
+  to {
+    transform: rotateX(150px);
+  }
+}
+
+@keyframes XparaMenu {
+  from {
+    transform: rotateX(0px);
+  }
+  to {
+    transform: rotateX(150px);
+  }
+}
 .menu {
-  margin-left: 4%;
-  margin-top: 3%;
-  width: 35%;
-  background-color: transparent;
+  width: 45%;
+}
+.menu #button-menu {
+  display: none;
 }
 .menu nav {
   display: flex;
   justify-content: space-between;
 }
-.menu nav :first-child {
-  font-size: 1.5em;
-}
 .menu nav a {
+  margin: 5%;
   font-size: 1.25em;
   color: rgba(216, 216, 214, 0.6117647059);
   text-decoration: none;
 }
 .menu nav a:hover {
   color: gainsboro;
+}
+@media (max-width: 768px) {
+  .menu #button-menu {
+    display: flex;
+    border: none;
+    color: gainsboro;
+    font-size: 25px;
+    margin: 1em;
+    width: 50px;
+    height: 25px;
+    flex-wrap: wrap;
+  }
+  .menu #button-menu div {
+    background-color: red;
+    height: 5px;
+    width: 25px;
+  }
+  .menu nav {
+    display: flex;
+    flex-direction: column;
+    width: 50%;
+    background-color: black;
+  }
 }
 
 @keyframes surgir {

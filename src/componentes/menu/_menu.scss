@@ -1,24 +1,62 @@
 @import "../../style/global" ; 
 
 
-.menu {
-    margin-left: 4%;
-    margin-top: 3%;
-    width: 35% ;
-    background-color: transparent;
-    nav {
-        display: flex;
-        justify-content: space-between;
-        :first-child {
-            font-size: 1.5em;
+//animation
+    @keyframes XparaMenu {
+        from {
+            transform:rotateX(0px);
         }
+        to {
+            transform: rotateX(150px);
+        }
+    }
+
+
+
+//fim do animation
+
+.menu {
+    width: 45% ;
+    #button-menu{
+        display: none;
+    }
+    nav { 
+        display: flex;
+        justify-content: space-between;        
         a {
+            margin: 5%;
             font-size: 1.25em;
             color: $cor-2-texto;
             text-decoration: none;
             &:hover {
                 color:$cor-1-texto;
             }
+        }
+    }
+    @media (max-width: 768px) {
+        #button-menu{
+            display: flex;
+            border: none;
+            color:$cor-1-texto;;
+            font-size: 25px;
+            margin: 1em;
+            width: 50px;
+            height: 25px;
+
+            flex-wrap: wrap;
+
+            div{
+                background-color: red;
+                height: 5px;
+                width: 25px;
+                
+            }
+        }
+        nav {
+            display: flex;
+            flex-direction: column;
+            width: 50%;
+            background-color: black;
         }
     }
 }
