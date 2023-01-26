@@ -104,7 +104,7 @@ render() {
                 }
             />
             </div>
-           <button className="controleHome" onClick={this.SumireAparecer.bind(this)}><MdKeyboardArrowDown size={100}/></button> 
+           <button className="controleHome" onClick={this.SumireAparecer.bind(this)}><MdKeyboardArrowDown /></button> 
            <Rodape classSecundaria="rodapeHome"/>    
         </>
     )

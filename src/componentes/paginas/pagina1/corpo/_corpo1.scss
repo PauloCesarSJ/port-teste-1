@@ -1,35 +1,32 @@
 @import "../../../../style/global";
 
 .divTextoAreaHome{
-    position: absolute;
     display: block;
-    margin-top: 7%;
+    margin-top: 8%;
     margin-left: 14%;
     width: 70%;
-    line-height: 1em;
 }
 
 
 .texto{
     text-align: center;
     color: $cor-1-texto;
+    line-height: 100%;
 }
 
 .primeiroTextoHome{
-    font-size: 5.5em;
     flex-wrap: wrap;
-    line-height: 20px;
+    font-size: 500%;
 }
 
 .segundoTextoHome{
     color: $cor-2-texto;
-    font-size: 1.7em;
+    font-size: 150%;
 }
 
 .button{
     background-color: transparent;
     padding: 1.5em 2.5em;
-    max-width: 25%;
     margin-left: 35%;
     border-color: $cor-2-texto;
     a{
@@ -53,21 +50,42 @@
     color: $cor-1-texto;
     border: none;
     cursor: pointer;
-    position: absolute;
-    margin-top: 35%;
-    margin-left: 42%;
+    margin-top: 5%;
+    margin-left: 40%;
+    :first-child{
+        font-size: 100px;
+    }
 }
 
 .rodapeHome{
-    margin-top: 42.5%;
+    margin-top: 4%;
     margin-left: 4%;
 }
 
-@media (min-width: 768px) {
+@media (max-width: 768px) {
     .divTextoAreaHome{
-        position: relative;
-        margin-left: 14%;
-        width: 70%;
-        line-height: 1em;
+        margin-top: 100px;
     }
+    .primeiroTextoHome{
+        font-size: 35px;
+    }
+    .segundoTextoHome{
+        font-size: 20px;
+    }
+    .button{
+        margin-left: 20%;
+        a{
+            font-size: 20px;
+        }
+    }
+    .controleHome{
+    margin-left: 35%;
+    padding: 1em;
+    :first-child{
+        font-size: 70px;
+    }
+   }
+   .rodapeHome{
+    margin-top: 70px;
+   }
 }

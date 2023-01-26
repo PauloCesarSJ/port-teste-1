@@ -1,6 +1,6 @@
 @-webkit-keyframes surgir {
   from {
-    transform: translateY(115px);
+    transform: translateY(50%);
     opacity: 0;
   }
   to {
@@ -10,7 +10,7 @@
 }
 @keyframes surgir {
   from {
-    transform: translateY(115px);
+    transform: translateY(50%);
     opacity: 0;
   }
   to {
@@ -41,7 +41,7 @@
   }
 }
 .esconder {
-  visibility: hidden;
+  display: none;
 }
 
 .aparecer {
@@ -57,7 +57,7 @@ body {
 
 @keyframes surgir {
   from {
-    transform: translateY(115px);
+    transform: translateY(50%);
     opacity: 0;
   }
   to {
@@ -77,7 +77,7 @@ body {
   }
 }
 .esconder {
-  visibility: hidden;
+  display: none;
 }
 
 .aparecer {
@@ -102,7 +102,7 @@ body {
   justify-content: space-between;
 }
 .menu nav a {
-  margin: 3em 0em 0em 2em;
+  margin: 2em 0em 0em 2em;
   font-size: 1.25em;
   color: rgba(216, 216, 214, 0.6117647059);
   text-decoration: none;
@@ -162,7 +162,7 @@ body {
 
 @keyframes surgir {
   from {
-    transform: translateY(115px);
+    transform: translateY(50%);
     opacity: 0;
   }
   to {
@@ -182,7 +182,7 @@ body {
   }
 }
 .esconder {
-  visibility: hidden;
+  display: none;
 }
 
 .aparecer {
@@ -208,7 +208,7 @@ body {
 
 @keyframes surgir {
   from {
-    transform: translateY(115px);
+    transform: translateY(50%);
     opacity: 0;
   }
   to {
@@ -228,7 +228,7 @@ body {
   }
 }
 .esconder {
-  visibility: hidden;
+  display: none;
 }
 
 .aparecer {
@@ -243,34 +243,31 @@ body {
 }
 
 .divTextoAreaHome {
-  position: absolute;
   display: block;
-  margin-top: 7%;
+  margin-top: 8%;
   margin-left: 14%;
   width: 70%;
-  line-height: 1em;
 }
 
 .texto {
   text-align: center;
   color: gainsboro;
+  line-height: 100%;
 }
 
 .primeiroTextoHome {
-  font-size: 5.5em;
   flex-wrap: wrap;
-  line-height: 20px;
+  font-size: 500%;
 }
 
 .segundoTextoHome {
   color: rgba(216, 216, 214, 0.6117647059);
-  font-size: 1.7em;
+  font-size: 150%;
 }
 
 .button {
   background-color: transparent;
   padding: 1.5em 2.5em;
-  max-width: 25%;
   margin-left: 35%;
   border-color: rgba(216, 216, 214, 0.6117647059);
 }
@@ -294,27 +291,48 @@ body {
   color: gainsboro;
   border: none;
   cursor: pointer;
-  position: absolute;
-  margin-top: 35%;
-  margin-left: 42%;
+  margin-top: 5%;
+  margin-left: 40%;
+}
+.controleHome :first-child {
+  font-size: 100px;
 }
 
 .rodapeHome {
-  margin-top: 42.5%;
+  margin-top: 4%;
   margin-left: 4%;
 }
 
-@media (min-width: 768px) {
+@media (max-width: 768px) {
   .divTextoAreaHome {
-    position: relative;
-    margin-left: 14%;
-    width: 70%;
-    line-height: 1em;
+    margin-top: 100px;
+  }
+  .primeiroTextoHome {
+    font-size: 35px;
+  }
+  .segundoTextoHome {
+    font-size: 20px;
+  }
+  .button {
+    margin-left: 20%;
+  }
+  .button a {
+    font-size: 20px;
+  }
+  .controleHome {
+    margin-left: 35%;
+    padding: 1em;
+  }
+  .controleHome :first-child {
+    font-size: 70px;
+  }
+  .rodapeHome {
+    margin-top: 70px;
   }
 }
 @keyframes surgir {
   from {
-    transform: translateY(115px);
+    transform: translateY(50%);
     opacity: 0;
   }
   to {
@@ -334,7 +352,7 @@ body {
   }
 }
 .esconder {
-  visibility: hidden;
+  display: none;
 }
 
 .aparecer {
@@ -380,7 +398,7 @@ body {
 
 @keyframes surgir {
   from {
-    transform: translateY(115px);
+    transform: translateY(50%);
     opacity: 0;
   }
   to {
@@ -400,7 +418,7 @@ body {
   }
 }
 .esconder {
-  visibility: hidden;
+  display: none;
 }
 
 .aparecer {
@@ -464,7 +482,7 @@ body {
 
 @keyframes surgir {
   from {
-    transform: translateY(115px);
+    transform: translateY(50%);
     opacity: 0;
   }
   to {
@@ -484,7 +502,7 @@ body {
   }
 }
 .esconder {
-  visibility: hidden;
+  display: none;
 }
 
 .aparecer {
@@ -522,7 +540,7 @@ body {
 
 @keyframes surgir {
   from {
-    transform: translateY(115px);
+    transform: translateY(50%);
     opacity: 0;
   }
   to {
@@ -542,7 +560,7 @@ body {
   }
 }
 .esconder {
-  visibility: hidden;
+  display: none;
 }
 
 .aparecer {
