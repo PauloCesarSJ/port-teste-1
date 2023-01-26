@@ -2,14 +2,7 @@
 
 
 //animation
-    @keyframes XparaMenu {
-        from {
-            transform:rotateX(0px);
-        }
-        to {
-            transform: rotateX(150px);
-        }
-    }
+
 
 
 
@@ -21,10 +14,10 @@
         display: none;
     }
     nav { 
-        display: flex;
+        display: flex ;
         justify-content: space-between;        
         a {
-            margin: 5%;
+            margin: 3em 0em 0em 2em;
             font-size: 1.25em;
             color: $cor-2-texto;
             text-decoration: none;
@@ -34,6 +27,27 @@
         }
     }
     @media (max-width: 768px) {
+        .Fechado{
+            display: none !important;
+        }
+        .Barras{
+            flex-wrap: wrap;
+            :first-child{
+                margin-bottom: 5px
+            }
+            div{
+                justify-content: space-between;
+                position: relative !important;
+            }
+        }
+       .X{
+            :first-child{
+                transform: rotate(45deg);
+            }
+            :last-child{
+                transform: rotate(-45deg);
+            }
+       }
         #button-menu{
             display: flex;
             border: none;
@@ -41,22 +55,28 @@
             font-size: 25px;
             margin: 1em;
             width: 50px;
-            height: 25px;
-
-            flex-wrap: wrap;
-
+            height:2px;
+            background-color: transparent;
+            
             div{
-                background-color: red;
+                position: absolute;
+                background-color: $cor-1-texto;
                 height: 5px;
                 width: 25px;
-                
             }
         }
         nav {
+            justify-content: flex-start;
+            position: absolute;
             display: flex;
             flex-direction: column;
-            width: 50%;
-            background-color: black;
+            width: 200px;
+            height: 50%;
+            background-color: #171616;
+            a{
+                margin-top: 25%;
+            }
         }
     }
 }
+

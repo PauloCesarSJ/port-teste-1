@@ -91,23 +91,6 @@ body {
   background-color: #383838;
 }
 
-@-webkit-keyframes XparaMenu {
-  from {
-    transform: rotateX(0px);
-  }
-  to {
-    transform: rotateX(150px);
-  }
-}
-
-@keyframes XparaMenu {
-  from {
-    transform: rotateX(0px);
-  }
-  to {
-    transform: rotateX(150px);
-  }
-}
 .menu {
   width: 45%;
 }
@@ -119,7 +102,7 @@ body {
   justify-content: space-between;
 }
 .menu nav a {
-  margin: 5%;
+  margin: 3em 0em 0em 2em;
   font-size: 1.25em;
   color: rgba(216, 216, 214, 0.6117647059);
   text-decoration: none;
@@ -128,6 +111,25 @@ body {
   color: gainsboro;
 }
 @media (max-width: 768px) {
+  .menu .Fechado {
+    display: none !important;
+  }
+  .menu .Barras {
+    flex-wrap: wrap;
+  }
+  .menu .Barras :first-child {
+    margin-bottom: 5px;
+  }
+  .menu .Barras div {
+    justify-content: space-between;
+    position: relative !important;
+  }
+  .menu .X :first-child {
+    transform: rotate(45deg);
+  }
+  .menu .X :last-child {
+    transform: rotate(-45deg);
+  }
   .menu #button-menu {
     display: flex;
     border: none;
@@ -135,19 +137,26 @@ body {
     font-size: 25px;
     margin: 1em;
     width: 50px;
-    height: 25px;
-    flex-wrap: wrap;
+    height: 2px;
+    background-color: transparent;
   }
   .menu #button-menu div {
-    background-color: red;
+    position: absolute;
+    background-color: gainsboro;
     height: 5px;
     width: 25px;
   }
   .menu nav {
+    justify-content: flex-start;
+    position: absolute;
     display: flex;
     flex-direction: column;
-    width: 50%;
-    background-color: black;
+    width: 200px;
+    height: 50%;
+    background-color: #171616;
+  }
+  .menu nav a {
+    margin-top: 25%;
   }
 }
 
@@ -295,6 +304,14 @@ body {
   margin-left: 4%;
 }
 
+@media (min-width: 768px) {
+  .divTextoAreaHome {
+    position: relative;
+    margin-left: 14%;
+    width: 70%;
+    line-height: 1em;
+  }
+}
 @keyframes surgir {
   from {
     transform: translateY(115px);

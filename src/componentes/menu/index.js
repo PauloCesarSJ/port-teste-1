@@ -1,38 +1,49 @@
 import '../../style/style.css';
-import {FiMenu} from "react-icons/fi"
 import React from "react"
-import { Alert } from 'bootstrap';
 
 
 class Menu extends React.Component {
     constructor(){
         super();
         this.state = {
-            primeiro: "Menu",
-            segundo:"Fechar",
+            Estado: "Fechado",
+            MenuButton: "Barras",
         }
     }
-    SumireAparecer(){
-        if(this.state.primeiro === "Menu"){
+    //Muda o icone do menu de Barras para um X
+    IconeXeBarras() {
+        if(this.state.MenuButton === "Barras"){
             this.setState({
-                primeiro: "Fechar",
-                segundo:"Menu",
-            })   
-        }if(this.state.segundo === "Menu"){
+                MenuButton: "X",
+            })
+        }if(this.state.MenuButton === "X"){
             this.setState({
-                segundo:"Fechar",
-                primeiro:"Menu",
+                MenuButton:"Barras",
             })
         }
     }
-    Foi(){
-        alert("foi")
+    //abre e fecha o menu
+    AbrieFechar(){
+        if(this.state.Estado === "Aberto"){
+            this.setState({
+                Estado: "Fechado",
+            })   
+            this.IconeXeBarras()
+        }if(this.state.Estado === "Fechado"){
+            this.setState({
+                Estado: "Aberto"
+            })
+            this.IconeXeBarras()
+        }
     }
+    
     render() {
         return(
             <div className="menu">
-                <button id='button-menu'><div id='barra1Menu'/><div id='barra2Menu'/><div id='barra3Menu'/></button>
-                <nav >
+                <button id='button-menu' className={this.state.MenuButton} onClick={this.AbrieFechar.bind(this)} >  
+                    <div id='barra1Menu'/><div id='barra2Menu'/> 
+                </button>
+                <nav className={this.state.Estado}>
                     <a
                         href="/">HOME 
                     </a>
