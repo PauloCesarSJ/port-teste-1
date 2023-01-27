@@ -30,41 +30,6 @@
         .Fechado{
             display: none !important;
         }
-        .Barras{
-            flex-wrap: wrap;
-            :first-child{
-                margin-bottom: 5px
-            }
-            div{
-                justify-content: space-between;
-                position: relative !important;
-            }
-        }
-       .X{
-            :first-child{
-                transform: rotate(45deg);
-            }
-            :last-child{
-                transform: rotate(-45deg);
-            }
-       }
-        #button-menu{
-            display: flex;
-            border: none;
-            color:$cor-1-texto;;
-            font-size: 25px;
-            margin: 1em;
-            width: 50px;
-            height:2px;
-            background-color: transparent;
-            
-            div{
-                position: absolute;
-                background-color: $cor-1-texto;
-                height: 5px;
-                width: 25px;
-            }
-        }
         nav {
             justify-content: flex-start;
             position: absolute;

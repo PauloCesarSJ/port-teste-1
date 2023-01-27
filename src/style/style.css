@@ -114,38 +114,6 @@ body {
   .menu .Fechado {
     display: none !important;
   }
-  .menu .Barras {
-    flex-wrap: wrap;
-  }
-  .menu .Barras :first-child {
-    margin-bottom: 5px;
-  }
-  .menu .Barras div {
-    justify-content: space-between;
-    position: relative !important;
-  }
-  .menu .X :first-child {
-    transform: rotate(45deg);
-  }
-  .menu .X :last-child {
-    transform: rotate(-45deg);
-  }
-  .menu #button-menu {
-    display: flex;
-    border: none;
-    color: gainsboro;
-    font-size: 25px;
-    margin: 1em;
-    width: 50px;
-    height: 2px;
-    background-color: transparent;
-  }
-  .menu #button-menu div {
-    position: absolute;
-    background-color: gainsboro;
-    height: 5px;
-    width: 25px;
-  }
   .menu nav {
     justify-content: flex-start;
     position: absolute;
@@ -203,6 +171,77 @@ body {
 }
 .rodapePrincipal a {
   color: rgba(216, 216, 214, 0.6117647059);
+}
+
+@keyframes surgir {
+  from {
+    transform: translateY(50%);
+    opacity: 0;
+  }
+  to {
+    transform: translateY(0);
+    opacity: 1;
+  }
+}
+@keyframes girar {
+  from {
+    transform: rotateX(-20deg) rotateY(-10deg);
+  }
+  50% {
+    transform: rotateX(20deg) rotateY(320deg);
+  }
+  to {
+    transform: rotateX(-20deg) rotateY(-20deg);
+  }
+}
+.esconder {
+  display: none;
+}
+
+.aparecer {
+  -webkit-animation-name: surgir;
+          animation-name: surgir;
+  -webkit-animation-duration: 2s;
+          animation-duration: 2s;
+}
+
+body {
+  background-color: #383838;
+}
+
+.Barras {
+  flex-wrap: wrap;
+}
+.Barras :first-child {
+  margin-bottom: 5px;
+}
+.Barras div {
+  justify-content: space-between;
+  position: relative !important;
+}
+
+.X :first-child {
+  transform: rotate(45deg);
+}
+.X :last-child {
+  transform: rotate(-45deg);
+}
+
+#Button-especial {
+  display: flex;
+  border: none;
+  color: gainsboro;
+  font-size: 25px;
+  margin: 1em;
+  width: 50px;
+  height: 2px;
+  background-color: transparent;
+}
+#Button-especial div {
+  position: absolute;
+  background-color: gainsboro;
+  height: 5px;
+  width: 25px;
 }
 
 @keyframes surgir {
@@ -375,7 +414,7 @@ body {
   position: absolute;
 }
 .quadroSobreMIm div {
-  flex: 2;
+  flex: 1;
 }
 .quadroSobreMIm div img {
   width: 80%;
@@ -395,10 +434,27 @@ body {
 }
 
 .rodapeEU {
+  position: absolute;
   margin-top: 48%;
   margin-left: 4%;
 }
 
+@media (max-width: 819px) {
+  .quadroSobreMIm {
+    margin-top: 0;
+  }
+  .quadroSobreMIm div img {
+    display: none;
+    position: absolute;
+    width: 25%;
+  }
+  .quadroSobreMIm div div {
+    width: 100%;
+    background-color: red;
+    margin-top: 25%;
+    margin-left: 50%;
+  }
+}
 @keyframes surgir {
   from {
     transform: translateY(50%);
@@ -483,6 +539,11 @@ body {
   transform: rotateX(-90deg) translateZ(250px);
 }
 
+@media (max-width: 819px) {
+  .corpo {
+    display: none;
+  }
+}
 @keyframes surgir {
   from {
     transform: translateY(50%);

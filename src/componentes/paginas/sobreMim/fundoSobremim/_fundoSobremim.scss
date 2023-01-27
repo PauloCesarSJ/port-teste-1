@@ -42,3 +42,9 @@
 .baixo{
     transform: rotateX(-90deg) translateZ(250px);
 }
+
+@media (max-width: 819px) {
+    .corpo{
+        display: none;
+    }
+}

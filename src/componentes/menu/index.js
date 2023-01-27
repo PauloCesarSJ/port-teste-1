@@ -1,5 +1,6 @@
 import '../../style/style.css';
 import React from "react"
+import ButtonBarrasX from '../buttonBarrasX/ButtonBarrasX';
 
 
 class Menu extends React.Component {
@@ -7,18 +8,18 @@ class Menu extends React.Component {
         super();
         this.state = {
             Estado: "Fechado",
-            MenuButton: "Barras",
+            ButtonX: "Barras",
         }
     }
     //Muda o icone do menu de Barras para um X
     IconeXeBarras() {
-        if(this.state.MenuButton === "Barras"){
+        if(this.state.ButtonX === "Barras"){
             this.setState({
-                MenuButton: "X",
+                ButtonX: "X",
             })
-        }if(this.state.MenuButton === "X"){
+        }if(this.state.ButtonX === "X"){
             this.setState({
-                MenuButton:"Barras",
+                ButtonX:"Barras",
             })
         }
     }
@@ -40,9 +41,7 @@ class Menu extends React.Component {
     render() {
         return(
             <div className="menu">
-                <button id='button-menu' className={this.state.MenuButton} onClick={this.AbrieFechar.bind(this)} >  
-                    <div id='barra1Menu'/><div id='barra2Menu'/> 
-                </button>
+                <ButtonBarrasX class={this.state.ButtonX} Click={this.AbrieFechar.bind(this)}/>
                 <nav className={this.state.Estado}>
                     <a
                         href="/">HOME 
