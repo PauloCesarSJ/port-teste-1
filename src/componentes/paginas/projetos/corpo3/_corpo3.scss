@@ -10,9 +10,9 @@
             color: $cor-1-texto;
         }
         p{
-            width: 90%;
+            width: 70%;
             color: $cor-1-texto;
-            font-size: 30px;
+            font-size: 170%;
         }
         a{
             img{
@@ -25,4 +25,24 @@
 .RodapeProjetos{
     margin-left: 4%;
     width: 15%;
+}
+
+@media (max-width:768px) {
+    .corpo3{
+        h1{
+            font-size: 30px;
+        }
+        p{
+            font-size: 20px  !important;
+        }
+        a{
+            img{
+                width: 90% !important;
+            }
+        }
+    }
+}
+.RodapeProjetos{
+        width: 35%;
+        font-size: 23px;
 }
