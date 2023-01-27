@@ -197,7 +197,6 @@ body {
 }
 
 .rodapePrincipal {
-  position: absolute;
   display: flex;
   justify-content: space-between;
   width: 20%;
@@ -609,16 +608,31 @@ body {
   margin-left: 35%;
 }
 .corpo4 .rodapeContato {
-  margin-top: 37.5%;
-  margin-left: 4%;
+  margin-top: 17.5%;
+  font-size: 30px;
 }
 
+@media (max-width: 768px) {
+  .corpo4 div {
+    margin-left: -35%;
+  }
+  .corpo4 .rodapeContato {
+    margin-top: 210px;
+    margin-left: 4%;
+  }
+}
 .enviarEmail {
   display: flex;
   flex-direction: column;
-  width: 30%;
+  width: 450px;
   margin-left: 30%;
 }
 .enviarEmail input {
   background-color: whitesmoke;
+}
+
+@media (max-width: 768px) {
+  .enviarEmail {
+    width: 60%;
+  }
 }/*# sourceMappingURL=style.css.map */

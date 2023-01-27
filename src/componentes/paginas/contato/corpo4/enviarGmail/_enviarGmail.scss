@@ -1,9 +1,15 @@
 .enviarEmail{
     display: flex;
     flex-direction: column;
-    width: 30%;
+    width: 450px;
     margin-left: 30%;
     input{
         background-color: whitesmoke;
+    }
+}
+
+@media(max-width:768px) {
+    .enviarEmail{
+        width: 60%;
     }
 }
