@@ -27,14 +27,17 @@
     }    
 }
 .rodapeEU{
-    position: absolute;
-    margin-top: 48%;
+    width: 25%;
+    font-size: 30px;
+    margin-top: 10%;
     margin-left: 4%;
 }
 
-@media (max-width:819px){
+@media (max-width:1079px){
     .quadroSobreMIm{
-        margin-top: 0;
+        margin-top: -1%;
+        margin-left: 2%;
+        width: 100%;
         div{
             img{
                 display: none;
@@ -42,11 +45,37 @@
                 width: 25%;
             }
             div{
-              width: 100%;
-              background-color: red;
-              margin-top: 25%;
-              margin-left: 50%;
+                width: 100%;
+                margin-top: 2%;
+                margin-left: 50%;
+                h2{
+                    font-size: 20px;
+                }
+                p{
+                    font-size: 12px;
+                }
+                div{
+                    h2{
+                        margin-left: -3em;
+                    }
+                }
             }
         }
+    }
+    .rodapeEU{
+        font-size: 20px;
+        width: 35% !important;
+    }
+}
+
+@media (max-width: 768px) {
+    .quadroSobreMIm {
+        position:unset;
+    }
+    .rodapeEU{
+        margin-left: 2% !important;
+        width: 80% !important;
+        display: flex;
+        margin-bottom: 25%;
     }
 }

@@ -2,7 +2,6 @@ import '../../../../style/style.css';
 import ButtonBarrasX from '../../../buttonBarrasX/ButtonBarrasX';
 import Rodape from '../../../rodape/rodape';
 import React from 'react';
-
 class Corpo2 extends  React.Component {
     constructor(){
         super();
@@ -45,17 +44,15 @@ class Corpo2 extends  React.Component {
                 })
             }
     }
-
     render() {
         return (
             <div className="quadroSobreMIm">
             <div>
                     <div>
-                        <div>
+                        <div>  
                             <h2>QUEM SOU</h2>
-                            <ButtonBarrasX Click={this.IconeXeBarras1.bind(this)} class={this.state.Button1}/>
                         </div>
-                        <p>
+                        <p >
                                 Ola eu sou Paulo Cesar, tenho 18 anos, sou um jovem, web developer júnior.
                                 Sou apaixonado por tecnologia. Minha história com tecnologia começa aos meus 14 anos
                                 onde meu professo de física me apresentando um Arduíno, usando c++ para fazer o básico,
@@ -67,9 +64,8 @@ class Corpo2 extends  React.Component {
                         </p>
                         <div>
                             <h2>OQUE SEI</h2>
-                            <ButtonBarrasX Click={this.IconeXeBarras2.bind(this)} class={this.state.Button2}/>
                         </div>
-                        <p>
+                        <p >
                             Meus conhecimentos na área de desenvolvimento web são  html,
                             css, javascript, react, sass, git e alguns conhecimentos teóricos, conhecimento básico
                             de edição de imagens e vídeos também podem ser considerados, e o domínio da
@@ -77,44 +73,20 @@ class Corpo2 extends  React.Component {
                         </p>
                         <div>
                             <h2>FUTURO</h2>
-                            <ButtonBarrasX Click={this.IconeXeBarras3.bind(this)} class={this.state.Button3}/>
                         </div>
-                        <p>
+                        <p >
                             Meus planos seriam me forma em ciencias da computação e design gráfico, assim eu poderia ter um conhecimento
                             mais profundo dessa área que me apaixonei por.
                         </p>
+                        <Rodape classSecundaria="rodapeEU"/>
                     </div>
             </div>
             <div >
                         <img alt='Uma foto minha' src="/imagens/IMG_20210816_094739_016.png"/>
             </div>
-            <Rodape classSecundaria="rodapeEU"/>
             </div>
         )
     }
     
 }
-
 export default Corpo2
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-

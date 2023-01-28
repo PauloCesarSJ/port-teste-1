@@ -209,41 +209,47 @@ body {
   background-color: #383838;
 }
 
-.Barras {
-  flex-wrap: wrap;
-}
-.Barras :first-child {
-  margin-bottom: 5px;
-}
-.Barras div {
-  justify-content: space-between;
-  position: relative !important;
+.ButtonBarrasX {
+  display: none;
 }
 
-.X :first-child {
-  transform: rotate(45deg);
+@media (max-width: 768px) {
+  .ButtonBarrasX {
+    display: flex;
+  }
+  .Barras {
+    flex-wrap: wrap;
+  }
+  .Barras :first-child {
+    margin-bottom: 5px;
+  }
+  .Barras div {
+    justify-content: space-between;
+    position: relative !important;
+  }
+  .X :first-child {
+    transform: rotate(45deg);
+  }
+  .X :last-child {
+    transform: rotate(-45deg);
+  }
+  #Button-especial {
+    display: flex;
+    border: none;
+    color: gainsboro;
+    font-size: 25px;
+    margin: 1em;
+    width: 50px;
+    height: 2px;
+    background-color: transparent;
+  }
+  #Button-especial div {
+    position: absolute;
+    background-color: gainsboro;
+    height: 5px;
+    width: 25px;
+  }
 }
-.X :last-child {
-  transform: rotate(-45deg);
-}
-
-#Button-especial {
-  display: flex;
-  border: none;
-  color: gainsboro;
-  font-size: 25px;
-  margin: 1em;
-  width: 50px;
-  height: 2px;
-  background-color: transparent;
-}
-#Button-especial div {
-  position: absolute;
-  background-color: gainsboro;
-  height: 5px;
-  width: 25px;
-}
-
 @keyframes surgir {
   from {
     transform: translateY(50%);
@@ -434,14 +440,17 @@ body {
 }
 
 .rodapeEU {
-  position: absolute;
-  margin-top: 48%;
+  width: 25%;
+  font-size: 30px;
+  margin-top: 10%;
   margin-left: 4%;
 }
 
-@media (max-width: 819px) {
+@media (max-width: 1079px) {
   .quadroSobreMIm {
-    margin-top: 0;
+    margin-top: -1%;
+    margin-left: 2%;
+    width: 100%;
   }
   .quadroSobreMIm div img {
     display: none;
@@ -450,9 +459,32 @@ body {
   }
   .quadroSobreMIm div div {
     width: 100%;
-    background-color: red;
-    margin-top: 25%;
+    margin-top: 2%;
     margin-left: 50%;
+  }
+  .quadroSobreMIm div div h2 {
+    font-size: 20px;
+  }
+  .quadroSobreMIm div div p {
+    font-size: 12px;
+  }
+  .quadroSobreMIm div div div h2 {
+    margin-left: -3em;
+  }
+  .rodapeEU {
+    font-size: 20px;
+    width: 35% !important;
+  }
+}
+@media (max-width: 768px) {
+  .quadroSobreMIm {
+    position: unset;
+  }
+  .rodapeEU {
+    margin-left: 2% !important;
+    width: 80% !important;
+    display: flex;
+    margin-bottom: 25%;
   }
 }
 @keyframes surgir {
@@ -539,7 +571,7 @@ body {
   transform: rotateX(-90deg) translateZ(250px);
 }
 
-@media (max-width: 819px) {
+@media (max-width: 1079px) {
   .corpo {
     display: none;
   }
