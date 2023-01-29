@@ -45,7 +45,7 @@ render() {
                     "primeiroTextoHome"
                 }
                 texto1={
-                    "Este e meu portfólio, sou um web devoleper junior"
+                    "Este e meu portefólio, sou um programador front end júnior"
                 }
                 class1={
                     "segundoTextoHome"
@@ -68,7 +68,7 @@ render() {
                     "primeiroTextoHome"
                 }
                 texto1={
-                    "Um Mostruario onde exponho meus projetos, tanto de estudo quando de trabalho"
+                    "Um Mostruário onde exponho meus projetos, tanto de estudos quando de trabalhos."
                 }
                 class1={
                     "segundoTextoHome"
@@ -91,7 +91,7 @@ render() {
                     "primeiroTextoHome"
                 }
                 texto1={
-                    "Não e necessário fazer desenhos em plantações, basta clicar no botão abaixo para me contatar"
+                    "Não e necessário fazer desenhos em plantações, basta clicar no botão abaixo para me contatar."
                 }
                 class1={
                     "segundoTextoHome"

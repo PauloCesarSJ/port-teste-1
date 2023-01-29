@@ -68,13 +68,13 @@ class Corpo2 extends  React.Component {
                             Meus conhecimentos na área de desenvolvimento web são  html,
                             css, javascript, react, sass, git e alguns conhecimentos teóricos, conhecimento básico
                             de edição de imagens e vídeos também podem ser considerados, e o domínio da
-                            língua inglesa, poder ser melhor vistos na área do meu <a href='projetos'>projetos</a>. 
+                            língua inglesa, poder ser melhor vistos na área do meus <a href='projetos'>projetos</a>. 
                         </p>
                         <div>
                             <h2>FUTURO</h2>
                         </div>
                         <p >
-                            Meus planos seriam me forma em ciencias da computação e design gráfico, assim eu poderia ter um conhecimento
+                            Meus planos seriam me forma em ciências da computação e design gráfico, assim eu poderia ter um conhecimento
                             mais profundo dessa área que me apaixonei por.
                         </p>
                         <Rodape classSecundaria="rodapeEU"/>
