@@ -1,8 +1,6 @@
 import '../../style/style.css';
 import React from "react"
 import ButtonBarrasX from '../buttonBarrasX/ButtonBarrasX';
-
-
 class Menu extends React.Component {
     constructor(){
         super();
