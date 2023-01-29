@@ -1,0 +1,13 @@
+{
+  "files": {
+    "main.css": "//paulocesarsj.github.io/build/static/css/main.7092c210.css",
+    "main.js": "//paulocesarsj.github.io/build/static/js/main.aa0d7b31.js",
+    "index.html": "//paulocesarsj.github.io/build/index.html",
+    "main.7092c210.css.map": "//paulocesarsj.github.io/build/static/css/main.7092c210.css.map",
+    "main.aa0d7b31.js.map": "//paulocesarsj.github.io/build/static/js/main.aa0d7b31.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.7092c210.css",
+    "static/js/main.aa0d7b31.js"
+  ]
+}
