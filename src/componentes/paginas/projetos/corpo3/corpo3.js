@@ -17,7 +17,7 @@ return(
                 feita pelos inputs, um site onde poderias cadastrar pessoas para uma lista de trabalhadores da Alura, onde escolher imagens,
                 cores, texto ou grupo o endivido trabalha.
             </p> 
-            <a href="AluraOrgano"><img src='/imagens/banner.png' alt='Logo do Organo' /></a>
+            <a href="AluraOrgano"><img src='imagens/banner.png' alt='Logo do Organo' /></a>
         </div>    
     </div>
     <Rodape classSecundaria="RodapeProjetos"/>

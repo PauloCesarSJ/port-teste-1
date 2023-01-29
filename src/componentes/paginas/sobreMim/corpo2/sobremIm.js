@@ -81,7 +81,7 @@ class Corpo2 extends  React.Component {
                     </div>
             </div>
             <div >
-                        <img alt='Uma foto minha' src="/imagens/IMG_20210816_094739_016.png"/>
+            <img alt='Uma foto minha' src="imagens/IMG_20210816_094739_016.png"/>
             </div>
             </div>
         )
