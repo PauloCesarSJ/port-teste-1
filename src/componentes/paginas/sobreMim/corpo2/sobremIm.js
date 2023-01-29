@@ -1,5 +1,4 @@
 import '../../../../style/style.css';
-import ButtonBarrasX from '../../../buttonBarrasX/ButtonBarrasX';
 import Rodape from '../../../rodape/rodape';
 import React from 'react';
 class Corpo2 extends  React.Component {
