@@ -13,13 +13,13 @@ function App() {
   return (
     <BrowserRouter basename={process.env.PUBLIC_URL}>
       <Routes>
-        <Route path="/" component={<Pagina1/>} />
-        <Route path="/sobreMim" component={<Eu/>} />
-        <Route path="/projetos" component={<Projetos/>} />
-        <Route path="/contato"  component={<Contato/>}/>
+        <Route path="/" element={<Pagina1/>} />
+        <Route path="/sobreMim" element={<Eu/>} />
+        <Route path="/projetos" element={<Projetos/>} />
+        <Route path="/contato"  element={<Contato/>}/>
 
-        <Route path="AluraOrgano" component={<AluraOrgano/>} />
-        <Route path="*" component={<p>erro 404</p>}/>
+        <Route path="AluraOrgano" element={<AluraOrgano/>} />
+        <Route path="*" element={<p>erro 404</p>}/>
       </Routes>
     </BrowserRouter>
   );
