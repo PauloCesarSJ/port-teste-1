@@ -42,7 +42,7 @@ class Menu extends React.Component {
                 <ButtonBarrasX class={this.state.ButtonX} Click={this.AbrieFechar.bind(this)}/>
                 <nav className={this.state.Estado}>
                     <a
-                        href="/">HOME 
+                        href="port1">HOME 
                     </a>
                     <a
                         href='sobreMim'>SOBRE MIM                
