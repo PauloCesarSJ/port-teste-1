@@ -51,7 +51,7 @@ render() {
                     "segundoTextoHome"
                 }
                 texto2={
-                    <a href="sobreMim">Sobre mim</a>
+                    <a href="#/sobreMim">Sobre mim</a>
                 }
                 class3={
                     "esconder"
@@ -74,7 +74,7 @@ render() {
                     "segundoTextoHome"
                 }
                 texto2={
-                    <a href="projetos">PROJETOS</a>
+                    <a href="#/projetos">PROJETOS</a>
                 }
                 class3={
                     "esconder"
@@ -97,7 +97,7 @@ render() {
                     "segundoTextoHome"
                 }
                 texto2={
-                    <a href="contato">CONTATO</a>
+                    <a href="#/contato">CONTATO</a>
                 }
                 class3={
                     "esconder"
