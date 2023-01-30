@@ -6,8 +6,8 @@
 
 @media (max-width: 768px) {
     .ButtonBarrasX{
-        display: flex;
-    }
+        display:-webkit-flex;
+    
     .Barras{
         flex-wrap: wrap;
         :first-child{
@@ -43,6 +43,7 @@
             width: 25px;
         }
     }
+}
 }
 
 

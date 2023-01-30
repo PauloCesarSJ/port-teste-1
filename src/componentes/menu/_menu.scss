@@ -10,13 +10,12 @@
 
 .menu {
     width: 45% ;
-    #button-menu{
-        display: none;
-    }
+  
     nav { 
         display: flex ;
         justify-content: space-between;        
         a {
+            line-height: 13px;
             margin: 2em 0em 0em 2em;
             font-size: 1.25em;
             color: $cor-2-texto;
@@ -43,5 +42,14 @@
             }
         }
     }
+    @media (max-height:620px ){
+        nav{
+            line-height: 40% !important;
+            font-size: 80%;
+            a{
+                margin-top: 20%;
+            }
+        }
+}
 }
 

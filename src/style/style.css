@@ -94,14 +94,12 @@ body {
 .menu {
   width: 45%;
 }
-.menu #button-menu {
-  display: none;
-}
 .menu nav {
   display: flex;
   justify-content: space-between;
 }
 .menu nav a {
+  line-height: 13px;
   margin: 2em 0em 0em 2em;
   font-size: 1.25em;
   color: rgba(216, 216, 214, 0.6117647059);
@@ -125,6 +123,15 @@ body {
   }
   .menu nav a {
     margin-top: 25%;
+  }
+}
+@media (max-height: 620px) {
+  .menu nav {
+    line-height: 40% !important;
+    font-size: 80%;
+  }
+  .menu nav a {
+    margin-top: 20%;
   }
 }
 
@@ -215,25 +222,25 @@ body {
 
 @media (max-width: 768px) {
   .ButtonBarrasX {
-    display: flex;
+    display: -webkit-flex;
   }
-  .Barras {
+  .ButtonBarrasX .Barras {
     flex-wrap: wrap;
   }
-  .Barras :first-child {
+  .ButtonBarrasX .Barras :first-child {
     margin-bottom: 5px;
   }
-  .Barras div {
+  .ButtonBarrasX .Barras div {
     justify-content: space-between;
     position: relative !important;
   }
-  .X :first-child {
+  .ButtonBarrasX .X :first-child {
     transform: rotate(45deg);
   }
-  .X :last-child {
+  .ButtonBarrasX .X :last-child {
     transform: rotate(-45deg);
   }
-  #Button-especial {
+  .ButtonBarrasX #Button-especial {
     display: flex;
     border: none;
     color: gainsboro;
@@ -243,7 +250,7 @@ body {
     height: 2px;
     background-color: transparent;
   }
-  #Button-especial div {
+  .ButtonBarrasX #Button-especial div {
     position: absolute;
     background-color: gainsboro;
     height: 5px;
