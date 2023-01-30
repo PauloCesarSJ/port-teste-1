@@ -4,6 +4,7 @@ import Formulario from "./componentes/Formulario";
 import Rodape from "./componentes/Rodape";
 import Time from "./componentes/Time";
 import { v4 as uuidv4 } from 'uuid';
+import ButtonDeVolta from "../../../buttonDeRetorno/ButtonDeVolta";
 
 function AluraOrgano() {
 
@@ -288,6 +289,7 @@ function AluraOrgano() {
           />
         )}
       </section>
+      <ButtonDeVolta/>
       <Rodape />
     </div>
   );
